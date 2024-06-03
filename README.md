@@ -1,6 +1,8 @@
 # app-store-server-api
 A Ruby client for the [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi).
 
+[![Gem Version](https://badge.fury.io/rb/app_store_server_api.svg)](https://badge.fury.io/rb/app_store_server_api)
+
 ## Features
 
 - Transaction history, subscription status
