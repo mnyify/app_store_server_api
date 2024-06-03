@@ -19,7 +19,7 @@ module AppStoreServerApi
       @key_id = key_id
       @issuer_id = issuer_id
       @bundle_id = bundle_id
-      @base_url = app_store_base_url environment
+      @base_url = app_store_base_url environment.to_sym
     end
 
     def get_transaction_history(transaction_id, params: nil)
