@@ -1,23 +1,38 @@
 # app-store-server-api
-A Ruby client for the [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi).
+A Ruby client for the [App Store Server API](https://developer.apple.com/documentation/appstoreserverapi), offering:
+- Transaction history, transaction info, and subscription status endpoints
+- Test notification and notification history endpoints
+- Automatic ES256 JWT authentication with token refresh
+- Helpers for decoding and verifying JWS payloads
+- Built-in trust chain validation against Apple Root CAs
 
 [![Gem Version](https://badge.fury.io/rb/app_store_server_api.svg)](https://badge.fury.io/rb/app_store_server_api)
 
 ## Features
-
-- Transaction history, subscription status
-- Notification test and history endpoints
-- Manages authentication tokens for you
-- Helpers to decode JWS items
-- Performs certificate validation against Apple's CA.
+* Transaction history, transaction info, and subscription status endpoints
+* Test notification and notification history endpoints
+* Automatic ES256 JWT authentication with token refresh
+* Helpers for decoding and verifying JWS payloads
+* Built-in trust chain validation against Apple Root CAs
 
 ## Requirements
-
-**Ruby 3.x**
+- Ruby 3.0 or higher
 
 ## Installation
+
+### RubyGems
 ```bash
 gem install app_store_server_api
+```
+
+### Bundler
+Add to your `Gemfile`:
+```ruby
+gem 'app_store_server_api'
+```
+Run:
+```bash
+bundle install
 ```
 
 ## Usage
